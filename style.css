@@ -1,0 +1,142 @@
+                                :root {
+                                       font-size: 10px;
+                                       --MAIN-color: #d3ad7f;
+                                       --BLACK: #131313;
+                                       --BG: #010103;
+                                       --BORDER: 0.1rem solid rgb(255, 255, 255);
+                                   }
+                                   
+                                   * {
+                                       margin: 0;
+                                       padding: 0;
+                                       box-sizing: border-box;
+                                       text-decoration: none;
+                                   }
+                                   
+                                   .CAIXA-VIDEO {
+                                       position: fixed;
+                                       z-index: -1;
+                                       width: 100%;
+                                       height: 100%;
+                                   }
+                                   
+                                   .CAIXA-VIDEO video {
+                                       min-height: 100%;
+                                       min-width: 100%;
+                                       position: fixed;
+                                       top: 0;
+                                   }
+                                   
+                                   .MASCARA {
+                                       height: 100%;
+                                       width: 100%;
+                                       position: fixed;
+                                       top: 0;
+                                       background: linear-gradient( 109deg, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.99) 85%);
+                                   }
+                                   
+                                   section {
+                                       padding: 3rem 2rem;
+                                       margin: 0 auto;
+                                       max-width: 1200px;
+                                   }
+                               }
+                               .HEADER section {
+                                   display: flex;
+                                   flex-direction: column;
+                                   white-space: normal;
+                                   /* Permite a quebra de linha */
+                                   
+                                   overflow-wrap: break-word;
+                                   /* Força a quebra de palavra quando necessário */
+                                   
+                                   align-items: center;
+                                   justify-content: flex-start;
+                                   gap: 50PX;
+                                   padding: 1.5rem 0;
+                                   position: relative;
+                               }
+                               .HEADER section a img {
+                                   height: 6rem;
+                               }
+                               .HEADER section nav a {
+                                   margin: 0 1rem;
+                                   font-size: 1.8rem;
+                                   color: #ffffff;
+                               }
+                               .HEADER section nav a:hover {
+                                   color: var(--MAIN-color);
+                                   border-bottom: 0.1rem solid var(--MAIN-color);
+                                   padding-bottom: 0.5rem;
+                               }
+                               .CAIXA-PRINCIPAL {
+                                   min-height: 100vh;
+                                   display: flex;
+                                   align-items: center;
+                               }
+                               .CAIXA-PRINCIPAL div {
+                                   max-width: 60rem;
+                               }
+                               .CAIXA-PRINCIPAL div h3 {
+                                   color: #FFF;
+                                   font-size: 6rem;
+                                   text-transform: uppercase;
+                               }
+                               .CAIXA-PRINCIPAL div p {
+                                   font-size: 2rem;
+                                   color: #FFF;
+                                   font-weight: lighter;
+                                   padding: 1REM 0;
+                                   line-height: 1.8;
+                               }
+                               .BOTÃO-LINK {
+                                   background-color: var(--MAIN-color);
+                                   cursor: pointer;
+                                   margin-top: 2rem;
+                                   display: inline-block;
+                                   font-size: 1.7rem;
+                                   color: #FFF;
+                                   padding: 1rem 3rem;
+                                   border: none;
+                                   transition: 0.3s linear;
+                               }
+                               .CAIXA-PRINCIPAL div a:hover {
+                                   letter-spacing: 0.1rem;
+                               }
+                               .CAIXA-SOBRE h2 {
+                                   text-align: center;
+                                   color: #FFF;
+                                   text-transform: uppercase;
+                                   padding-bottom: 3.5rem;
+                                   font-size: 4rem;
+                               }
+                               .CAIXA-SOBRE h2 span {
+                                   color: var(--MAIN-color);
+                               }
+                               .CAIXA-SOBRE .SOBRE-CONTAINER {
+                                   display: flex;
+                                   align-items: center;
+                                   background-color: var(--BLACK);
+                                   flex-wrap: wrap;
+                               }
+                               .CAIXA-SOBRE .SOBRE-CONTAINER .SOBRE-IMAGEM {
+                                   flex: 1 1 45rem;
+                               }
+                               .CAIXA-SOBRE .SOBRE-CONTAINER .SOBRE-IMAGEM img {
+                                   width: 100%;
+                               }
+                               .CAIXA-SOBRE .SOBRE-CONTAINER .SOBRE-TEXTO {
+                                   flex: 1 1 45rem;
+                                   padding: 2rem;
+                               }
+                               .SOBRE-TEXTO h3 {
+                                   font-size: 3rem;
+                                   color: #FFF;
+                               }
+                               .SOBRE-TEXTO p {
+                                   font-size: 1.5rem;
+                                   font-weight: lighter;
+                                   color: #FFF;
+                                   line-height: 1.8;
+                                   padding: 1rem 0;
+                               }
